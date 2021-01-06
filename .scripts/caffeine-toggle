@@ -1,0 +1,9 @@
+#!/bin/sh
+
+C_PID=$(ps x | grep 'caffeine' | grep -v grep | grep -v caffeine-toggle)
+
+if [ -z $C_PID ]; then
+    caffeine -a
+else
+    caffeine kill
+fi

@@ -1,0 +1,28 @@
+#!/bin/bash
+# A script that uses translate-shell to use dmenu or rofi as a translator tool
+# Usage: you run the script without flags. but following flags will change the results
+# -r: Use this to change to an alternative dmenu or give options to rofi
+# -s: Source language. Default is "en"
+# -t: Target language. Default is "tr"
+# Example usage: translate -r "rofi -dmenu -lines 1" -s ja -t en
+# This will show a 80 width rofi window and translate the text you write from Japanese to English
+
+DMENU="rofi -dmenu -lines 0"
+SL="en"
+TL="tr"
+
+
+while getopts r:s:t: option; do
+	case "$option" in
+		r) DMENU="${OPTARG}" ;;
+		s) SL="${OPTARG}" ;;
+		t) TL="${OPTARG}" ;;
+	esac
+done
+
+T_TEXT=$($DMENU -i -p "$SL to $TL" | trans -b -s $SL -t $TL )
+
+if [ -n "$T_TEXT" ]; then
+	printf "$T_TEXT" | fold -w 40 | rofi -dmenu -i -markup-rows -sep "\t" -eh 10 -lines 1 -p "Result"
+	echo "$T_TEXT" | xclip -selection c
+fi
