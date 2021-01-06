@@ -1,0 +1,5 @@
+*.pyc
+.config/awesome/variables.lua
+.config/nvim/plugged/
+.config/nvim/autoload/
+.config/nvim/.netrwhist
