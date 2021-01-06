@@ -1,0 +1,70 @@
+{
+  "statusline": "%{coc#status()}",
+  "prettier.requireConfig": true,
+
+  "suggest.completionItemKindLabels": {
+    "text": "t",
+    "method": "m",
+    "function": "f"
+  },
+
+  "list.insertMappings": {
+    "<CR>": "action:tabe"
+  },
+  "list.normalMappings": {
+    "<CR>": "action:tabe"
+  },
+  "tslint.enable": true,
+  "tslint.autoFixOnSave": true,
+
+  "xml.java.home": "/usr/lib/jvm/java-8-openjdk/jre",
+
+  "cSpellExt.enableDictionaries": ["turkish"],
+  "cSpell.language": "en,tr",
+
+  "coc.preferences.hoverTarget": "float",
+
+  "yank.enableCompletion": false,
+
+  "python.setLinter": "flake8",
+  "python.linting.flake8Path": "/usr/bin/flake8",
+  "python.linting.pylintPath": "/usr/bin/pylint",
+  "python.linting.pylintEnabled": false,
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.jediEnabled": true,
+  "python.jediPath": "/home/kofteistkofte/.local/lib/python3.8/site-packages/",
+  "python.formatting.autopep8Path": "/usr/bin/autopep8",
+
+  "suggest.noselect": true,
+  "snippets.extends": {
+      "python": ["django"]
+  },
+
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "html.handlebars": "html",
+    "htmldjango": "html",
+    "javascript": "javascriptreact"
+  },
+
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snippets",
+  "snippets.ultisnips.directories": [
+    "UltiSnips",
+    "gosnippets/UltiSnips"
+  ],
+
+  "diagnostic.checkCurrentLine": true,
+
+  "codeLens.enable": true,
+  "coc.preferences.colorSupport": true,
+
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    }
+  }
+}
