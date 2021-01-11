@@ -62,7 +62,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 
 export TERMINAL='alacritty'
 export EDITOR='vim'
-export BROWSER='firefox'
+export BROWSER='brave'
 
 export GOPATH=~/.local/go
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/jre

@@ -133,17 +133,11 @@ globalkeys = gtable.join(
     end,
     {description = "open main file manager", group = "apps"}),
 
-  awful.key({ modkey, shiftkey }, "r",
-    function()
-      awful.spawn(file2)
-    end,
-    {description = "open secondary file manager", group = "apps"}),
-
   awful.key({ modkey }, "n",
     function()
       awful.spawn(music)
     end,
-    {description = "open ncmpcpp", group = "apps"}),
+    {description = "open spotify", group = "apps"}),
 
   -- Awesome actions
   awful.key({ modkey, shiftkey }, "F2",
@@ -345,21 +339,10 @@ globalkeys = gtable.join(
   -- Screenshot
   awful.key({}, "Print",
     function()
-      awful.spawn.with_shell("xfce4-screenshooter -f -s ~/Pictures/Screenshots")
+      awful.spawn.with_shell("flameshot gui")
     end,
-    {description = "took screenshot of entire screen", group = "screenshot"}),
+    {description = "took screenshot of entire screen", group = "screenshot"})
 
-  awful.key({ shiftkey }, "Print",
-    function()
-      awful.spawn.with_shell("xfce4-screenshooter -w -s ~/Pictures/Screenshots")
-    end,
-    {description = "took screenshot of focused window", group = "screenshot"}),
-
-  awful.key({ ctrlkey }, "Print",
-    function()
-      awful.spawn.with_shell("xfce4-screenshooter -r -s ~/Pictures/Screenshots")
-    end,
-    {description = "took screenshot of selected area", group = "screenshot"})
 )
 
 

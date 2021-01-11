@@ -41,6 +41,6 @@ nm-applet &
 udiskie --smart-tray &
 redshift-gtk &
 nitrogen --restore &
-setxkbmap -layout tr,us -option grp:alt_caps_toggle -option caps:none &
+setxkbmap -layout tr,us &
 
 exec awesome

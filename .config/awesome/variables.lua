@@ -1,14 +1,13 @@
 local awful = require("awful")
 local utils = require("utils")
 
-terminal = "urxvtc"
+terminal = "alacritty"
 browser1 = "brave"
 browser2 = "qutebrowser"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 file1 = terminal .. " -e " .. "ranger"
-file2 = "nemo"
-music = terminal .. " -e ncmpcpp"
+music = "spotify"
 
 thermal_zone = 1
 
@@ -26,7 +25,7 @@ awful.layout.layouts = {
 awful.util.tagnames = {
 	{
 		{name = "1", sel = true},
-		{name = "2", sgap = true},
+		{name = "2"},
 		{name = "3", lay = awful.layout.layouts[3], mw = 0.87},
 		{name = "4"},
 		{name = "5"},
