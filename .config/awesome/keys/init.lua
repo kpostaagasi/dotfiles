@@ -133,6 +133,12 @@ globalkeys = gtable.join(
     end,
     {description = "open main file manager", group = "apps"}),
 
+  awful.key({ modkey, shiftkey }, "r",
+    function()
+      awful.spawn(file2)
+    end,
+    {description = "open secondary file manager", group = "apps"}),
+
   awful.key({ modkey }, "n",
     function()
       awful.spawn(music)
