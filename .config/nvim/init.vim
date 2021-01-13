@@ -22,7 +22,7 @@ let g:python_host_prog='/usr/bin/python2'
 " Show line numbers and make current line bold
 set number
 set cursorline
-"highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 highlight CursorLineNR cterm=bold
 
 set ignorecase

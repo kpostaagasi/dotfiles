@@ -120,13 +120,7 @@ globalkeys = gtable.join(
       awful.spawn(browser1)
     end,
     {description = "open ".. browser1, group = "apps"}),
-
-  awful.key({ modkey, shiftkey }, "w",
-    function()
-      awful.spawn(browser2)
-    end,
-    {description = "open " .. browser2, group = "apps"}),
-
+      
   awful.key({ modkey }, "r",
     function()
       awful.spawn(file1)

@@ -3,10 +3,10 @@ local utils = require("utils")
 
 terminal = "alacritty"
 browser1 = "brave"
-browser2 = "qutebrowser"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 file1 = terminal .. " -e " .. "ranger"
+file2 = "nemo"
 music = "spotify"
 
 thermal_zone = 1

@@ -15,6 +15,7 @@ map <ESC>[1;5B <C-Down>
 map <C-c> :NERDTreeTabsToggle<CR>
 nmap <F8> :Vista!!<CR>
 nmap <F7> :CocList --number-select diagnostics<CR>
+nmap <F5> :w !python<CR>
 
 map <C-g> :Goyo<CR>
 

@@ -1,3 +1,4 @@
+#copy to /etc/pulse 
 #!/usr/bin/pulseaudio -nF
 #
 # This file is part of PulseAudio.
