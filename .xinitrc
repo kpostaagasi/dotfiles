@@ -40,6 +40,7 @@ unclutter &
 nm-applet &
 udiskie --smart-tray &
 redshift-gtk &
+bluetoothctl power on &
 nitrogen --restore &
 setxkbmap -layout tr,us &
 
