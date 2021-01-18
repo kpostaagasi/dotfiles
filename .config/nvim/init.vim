@@ -1,9 +1,7 @@
 set shell=$SHELL
 set encoding=UTF-8
 
-" Importing other configs
-source $HOME/.config/nvim/plugins.vim
-source $HOME/.config/nvim/lightline.vim
+" Importing other config
 source $HOME/.config/nvim/bindings.vim
 
 " Colors
