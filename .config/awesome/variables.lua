@@ -2,7 +2,7 @@ local awful = require("awful")
 local utils = require("utils")
 
 terminal = "alacritty"
-browser1 = "brave"
+browser1 = "firefox"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 file1 = terminal .. " -e " .. "ranger"
