@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-#export PATH=$HOME/.scripts:~/.local/bin:~/.local/share/node_modules/bin:~/.local/share/go/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.scripts:~/.local/bin:~/.local/share/node_modules/bin:~/.local/share/go/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/kpost/.oh-my-zsh"
