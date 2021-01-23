@@ -42,6 +42,6 @@ udiskie --smart-tray &
 redshift-gtk &
 bluetoothctl power on &
 nitrogen --restore &
-setxkbmap -layout tr,us &
+setxkbmap -layout us,tr -option grp:alt_shift_toggle &
 
 exec awesome
