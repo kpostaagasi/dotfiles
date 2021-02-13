@@ -37,6 +37,7 @@ pulsemixer --unmute &
 picom -b &
 parcellite &
 unclutter &
+flameshot &
 nm-applet &
 udiskie --smart-tray &
 redshift-gtk &
