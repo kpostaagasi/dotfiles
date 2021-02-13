@@ -56,6 +56,8 @@ export LANG=en_US.UTF-8
 stty -ixon
 
 alias vim=nvim
+alias hibernate="systemctl hibernate"
+alias pacman="sudo pacman"
 
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
